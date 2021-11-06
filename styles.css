@@ -1,0 +1,199 @@
+
+.main_container{
+  font-family: 'MonteCarlo', cursive;
+  display: grid;
+  place-items:center;
+  position: relative;
+  color:#444444;
+  /* width: 100%;
+  height: 100%;
+  background-image: url(images/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(8px); */
+/* width:100%;
+height:100%;
+background: url(images/img-1.jpg) no-repeat center fixed;
+background-size: cover;
+ filter: blur(8px);
+-webkit-filter: blur(8px); */
+
+
+}
+/* html{
+  background: url(images/img-1.jpg) no-repeat center fixed;
+  background-size: cover; */
+   /* filter: blur(8px);
+-webkit-filter: blur(8px); */
+body{
+  margin:0;
+}
+ .bg-image{
+  height:1000px;
+  width:100%;
+
+   background-image: url(bg/c-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin:0;
+  /* filter:blur(2px);
+  -webkit-filter: blur(8px);*/
+}
+
+
+
+.music_container{
+  height:32rem;
+  width: 30rem;
+  border-radius: 4rem;
+  text-align: center;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: #FDF6F0;
+  position: absolute;
+  top:6rem;
+  /* top: 7rem;
+  left: 27rem; */
+  /* bottom: 10rem; */
+
+
+}
+
+#img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: relative;
+  bottom: 5rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+
+}
+
+.anime{
+  animation: rotatePlayer 3s linear infinite;
+}
+
+
+@keyframes rotatePlayer {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.duration_container{
+  width: 100%;
+  height: auto;
+  /* padding-top:20px; */
+  padding-bottom: 20px;
+}
+
+.progress-div{
+  width: 90%;
+  height: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),0 2px 4px rgba(0,0,0,0.07),
+  0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),
+  0 16px 32px rgba(0,0,0,0.07) , 0 32px 64px rgba(0,0,0,0.07);
+  border-radius:4rem;
+  position: relative;
+  left:1.5rem;
+  margin-top: 0.5rem;
+  transition: all is linear;
+  -o-transition:all is linear;
+  -webkit-transition:all is linear;
+  -moz-transition:all is linear;
+  cursor:pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.progress{
+  position: absolute;
+  top: 0;
+  left: 0;
+   width: 0%;
+   height: 100%;
+   border-radius:4rem;
+   background-color: pink;
+   transition: all is linear;
+   -o-transition:all is linear;
+   -webkit-transition:all is linear;
+   -moz-transition:all is linear;
+   cursor:pointer;
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+.progressduration_meter{
+  position: relative;
+}
+
+#current_time{
+  position: absolute;
+  left:25px;
+  bottom: 10px;
+}
+
+#duration{
+  position: absolute;
+  right:25px;
+  bottom: 10px;
+}
+
+#text1{
+  margin:0;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#text2{
+  margin:0;
+  font-size: 25px;
+  text-shadow: 0.3px 0.3px 5px rgba(0, 0, 0, 0.4);
+  padding-bottom: 25px;
+}
+.control_container{
+  padding-top: 5px;
+  padding-bottom: 5px;
+ cursor: pointer;
+}
+
+#play{
+  font-size: 40px;
+  padding-left: 4rem;
+  padding-right:4rem;
+  color: #787A91;
+
+}
+#prev{
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #787A91;
+}
+#forw{
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #787A91;
+}
+#play:hover{
+  color: pink;
+}
+#prev:hover{
+  color: pink;
+}
+#forw:hover{
+  color: pink;
+}
+
+.fa-step-backward{
+  filter:drop-shadow( 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4));
+}
+.fa-play-circle{
+  filter:drop-shadow( 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4));
+}
+.fa-step-forward{
+  filter:drop-shadow( 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4));
+}
